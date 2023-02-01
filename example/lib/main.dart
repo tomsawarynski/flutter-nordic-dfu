@@ -51,7 +51,7 @@ class _MyAppState extends State<MyApp> {
     }
   }
 
-  void startScan() async{
+  void startScan() async {
     scanSubscription?.cancel();
     await flutterBlue.stopScan();
     setState(() {
